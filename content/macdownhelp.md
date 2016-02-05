@@ -1,8 +1,9 @@
-Title: This is the official help document of MacDown 
+Title: 如何用Pelecan和Github来搭建自己的静态博客 
 Date: 2016-02-03 20:20 
 Category: dev
 Tags: MacDown, Markdown, md, help
 Author: TP 
+Cover: http://d.pr/i/10UGP+
 
 # MacDown
 
