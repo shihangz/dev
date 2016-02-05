@@ -7,15 +7,20 @@ SITENAME = u'Hello World'
 SITEURL = 'http://dev.shihang.me'
 
 PATH = 'content'
+TIMEZONE = 'Asia/Shanghai' 
+DATE_FORMATS = {'zh_CN': '%Y-%m-%d %H:%M', } 
+DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M' 
+DEFAULT_DATE = 'fs'  # use filesystem's mtime 
+LOCALE = ('zh_CN',) 
+DEFAULT_LANG = u'zh_CN' 
+FILENAME_METADATA = '(?P<slug>.*)'
 
-TIMEZONE = 'Asia/Shanghai'
-
-DEFAULT_LANG = u'zh-Hans'
-
-THEME = 'medius'
+THEME = 'pelican-clean-blog'
 
 STATIC_PATHS = ['images', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, 'images': {'path': 'images'}}
+
+HEADER_COVER = 'images/cover.jpg'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -31,8 +36,11 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'https://twitter.com/myprofile'),
+          ('github', 'https://github.com/myprofile'),
+          ('facebook','https://facebook.com/myprofile'),
+          ('flickr','https://www.flickr.com/myprofile/'),
+          ('envelope','mailto:my@mail.address'))
 
 DEFAULT_PAGINATION = 10
 
