@@ -1,104 +1,297 @@
 <!DOCTYPE html>
-<html lang="zh-hans">
+<html lang="zh_cn">
+
 <head>
-        <title>Hello World - Shihang</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="../theme/css/main.css" />
-        <link href="http://dev.shihang.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hello World Full Atom Feed" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+        <title>Hello World - Articles by Shihang</title>
+
+            <link href="http://dev.shihang.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hello World Full Atom Feed" />
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="../theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+                <meta property="og:locale" content="zh_CN">
+		<meta property="og:site_name" content="Hello World">
 </head>
+
 <body>
 
-    <div class="main-nav-container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">Hello World</a>
+            </div>
 
-        <div class="pure-g">
-            <div class="pure-u-1 pure-u-lg-2-3">
-                <div class="main-nav">
-                    <ul class="main-nav-list">
-                        <li class="main-nav-item"><a href="../" class="pure-menu-link">Hello World</a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
 
-                        <li class="main-nav-item"><a href="../category/dev.html" class="pure-menu-link">dev</a></li>
-                        <li class="main-nav-item"><a href="../category/try.html" class="pure-menu-link">try</a></li>
-                    </ul>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('images/cover.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Articles by Shihang</h1>
+                    </div>
                 </div>
-             </div>
-
-             <div class="pure-u-1 pure-u-lg-1-3"></div>
-        </div>
-
-    </div>
-
-
-<div class="author-page-header">
-</div>
-
-<div class="author-page-divider">
-    <span>Latest Posts</span>
-</div>
-
-
-<div class="author-page-container">
-
-    <div class="post">
-        <div class="post-meta pure-g">
-
-            <div class="pure-u-3-4 meta-data">
-                <a href="../category/dev.html" class="category">dev</a><br />
-
-                <a class="author" href="../author/shihang.html">Shihang</a>
-                &mdash; <abbr title="2016-02-04T00:50:00+08:00">Thu 04 February 2016</abbr>
             </div>
         </div>
-        <h2><a href="../use-pelican-to-build-a-static-blog.html" rel="bookmark" title="Permalink to Use Pelican to build a static blog">Use Pelican to build a static blog</a></h2>
-        <div class="post-content">
-            <p>Pelican 在法语中是笔记本的意思，是一个静态站点生成器，使用 Python 语言写成。可以使用 rst(reStructuredText) 或者 Markdown 文件格式编写内容。Pelican 包含一个命令行接口用于生成站点，并且可以很方便地与分布式版本控制系统以及 web hook 交互。 Pelican 3 有如下特性:</p>
-<ul>
-<li>文章 Articles 以及 独立页面 pages 支持</li>
-<li>评论系统, 通过外部服务 Disqus 实现</li>
-<li>基于 Jinja2 的模板支持</li>
-<li>多语言支持</li>
-<li>Atom/RSS 订阅</li>
-<li>语法高亮</li>
-<li>支持从 WordPress, Dotclear, or RSS 订阅导入</li>
-<li>集成外部工具: Twitter, Google Analytics</li>
-<li>内容缓存和选择性输出 ...</li></ul>
-        </div>
-        <div class="post-footer">
-            <a href="../use-pelican-to-build-a-static-blog.html">Read more</a>
-        </div>
-    </div>
-    <div class="post">
-        <div class="post-meta pure-g">
+    </header>
 
-            <div class="pure-u-3-4 meta-data">
-                <a href="../category/try.html" class="category">try</a><br />
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-preview">
+            <a href="../2014-11-27-Molana-Rumi.html" rel="bookmark" title="Permalink to 鲁米：有阻碍的路">
+                <h2 class="post-title">
+                    鲁米：有阻碍的路
+                </h2>
+            </a>
+                <p><em>梁永安 译</em>   </p>
+<p>我希望知道你想要的是什么。 <br />
+你挡在路上，不让我歇息。 <br />
+你时而把我的马缰扯向一边，时而又扯向另一边。 <br />
+你怎么这么粗鲁，亲爱的！ <br />
+你听到我说的话吗？ <br ...
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-05 14:51
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../2014-11-29-pessoa.html" rel="bookmark" title="Permalink to 佩索阿：恋爱中的牧羊人（节选）">
+                <h2 class="post-title">
+                    佩索阿：恋爱中的牧羊人（节选）
+                </h2>
+            </a>
+                <p>杨子　译  </p>
+<p>高空，春月在走。 <br />
+　　我想念你，我心中已拿定了主意。  <br />
+　　来了，一阵轻风穿过开阔的草地，奔向我。<br />
+　　我想念你，默念你的芳名。我已经不再是<br />
+　　我，仅仅是，快乐。<br ...
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-05 14:49
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../2015-01-27-ideas.html" rel="bookmark" title="Permalink to 2015，记忆之光">
+                <h2 class="post-title">
+                    2015，记忆之光
+                </h2>
+            </a>
+                <p>现在 还是一片空白<br />
+心里 却从不曾荒芜  </p>
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-05 14:49
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../2015-01-27-my-sight.html" rel="bookmark" title="Permalink to A Dream With A Dream">
+                <h2 class="post-title">
+                    A Dream With A Dream
+                </h2>
+            </a>
+                <p>A dream with a dream<br />
+每一天都有一个晚安的期待<br />
+每一声都有回应的温柔<br />
+想你 在疲倦的午后 <br />
+想你 在清晨的微醺的光中<br />
+在深夜 闪亮的记忆  </p>
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-05 14:49
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../2015-03-08-A-Cat.html" rel="bookmark" title="Permalink to 我是一只喵">
+                <h2 class="post-title">
+                    我是一只喵
+                </h2>
+            </a>
+                <p>喵</p>
+<p>我从什么时候意识到我是一只喵的？</p>
+<p>一个晴朗的夏日傍晚<br />
+余热未消 蝉叫得累了都歇了停了<br />
+我趴在屋后门边的角落 看那夕阳从我眼前一点点 ...
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-05 14:49
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../2015-03-22-Lover-Letters.html" rel="bookmark" title="Permalink to 我的「情人書」">
+                <h2 class="post-title">
+                    我的「情人書」
+                </h2>
+            </a>
+                <p>沒有人是完美的。何況說 真正有意義的 不是讓自己愛的人接受并通過愛情的考验 而是彼此努力 帶著愛去面對考驗。愛情難道只是一個人的麼？就算能通過了 依靠一個人的勇敢 逞強或者僥倖 也是會讓人傷心的——為著自私的緣故 拋下一個人 獨自去面對一切 ...
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-05 14:49
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../2015-03-23-Azure.html" rel="bookmark" title="Permalink to 我的《蔚藍》">
+                <h2 class="post-title">
+                    我的《蔚藍》
+                </h2>
+            </a>
+                <p><img alt="Reed" src="http://dreamofbook.qiniudn.com/sunshineandreed.jpg" /></p>
+<h2>源起與後來</h2>
+<p>一點一滴的積聚 真的得到很久以後回過頭來才發現 原來 ...
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-05 14:49
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../pelicanguide.html" rel="bookmark" title="Permalink to Use Pelican to build a static blog">
+                <h2 class="post-title">
+                    Use Pelican to build a static blog
+                </h2>
+            </a>
+                <p>Pelican 在法语中是笔记本的意思，是一个静态站点生成器，使用 Python 语言写成。可以使用 rst(reStructuredText) 或者 Markdown 文件格式编写内容。Pelican ...
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-04 00:50
+            </p>
+        </div>
+        <div class="post-preview">
+            <a href="../20160205_sayhello.html" rel="bookmark" title="Permalink to Philippe Petit真的是候诊读报纸时，决定在双子塔之间走钢丝的吗？ 是的">
+                <h2 class="post-title">
+                    Philippe Petit真的是候诊读报纸时，决定在双子塔之间走钢丝的吗？ 是的
+                </h2>
+            </a>
+                <p>1，Philippe Petit真的是候诊读报纸时，决定在双子塔之间走钢丝的吗？ 是的。现实中的Philippe Petit在牙医诊所的报纸上看到了一位艺术家在未完成的双子塔上表演，深受启发，决定去完成这项他称之为‘the ...
+            <p class="post-meta">Posted by
+                    <a href="../author/shihang.html">Shihang</a>
+                 on 2016-02-03 21:56
+            </p>
+        </div>
 
-                <a class="author" href="../author/shihang.html">Shihang</a>
-                &mdash; <abbr title="2016-02-03T21:56:00+08:00">Wed 03 February 2016</abbr>
+    <hr>
+    <!-- Pager -->
+    <ul class="pager">
+        <li class="next">
+        </li>
+    </ul>
+    Page 1 / 1
+    <hr>
             </div>
         </div>
-        <h2><a href="../say-hello-to-the-world.html" rel="bookmark" title="Permalink to Say Hello To The World">Say Hello To The World</a></h2>
-        <div class="post-content">
-            <p>Hello World! I'm Shihang!</p>
-<p>参考博客:<br />
-<em> http://www.lizherui.com/pages/2013/08/17/build_blog.html
-</em> https://www.textarea.com/fireboyvt/30-fenzhong-zhangwo-pelican-109/</p>
-        </div>
-        <div class="post-footer">
-            <a href="../say-hello-to-the-world.html">Read more</a>
-        </div>
     </div>
 
-<div class="pagination">
-    <div class="post-meta pure-g">
-    </div>
-</div>
+    <hr>
 
-</div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://twitter.com/myprofile">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/myprofile">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com/myprofile">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/myprofile/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:my@mail.address">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>.
+</p>                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- jQuery -->
+    <script src="../theme/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="../theme/js/clean-blog.min.js"></script>
 
 </body>
+
 </html>
