@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2022-06-24T09:18:05.444Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="X2oHtoyetxO8HvrggauA" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-24T09:24:55.071Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="YcLswbfF-_xoF-rGMUJN" version="20.0.3" type="github">
   <diagram id="LsfKz9xEiHTjwQYNalZ0" name="Page-1">
-    <mxGraphModel dx="1091" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="875" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="d1nthGIvyw4kQUc58HfT-1" value="Hardware Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="d1nthGIvyw4kQUc58HfT-1" value="Hardware Layer" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
           <mxGeometry x="280" y="280" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="d1nthGIvyw4kQUc58HfT-2" value="Application Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="80" width="200" height="160" as="geometry" />
+          <mxGeometry x="280" y="80" width="200" height="200" as="geometry" />
         </mxCell>
         <mxCell id="d1nthGIvyw4kQUc58HfT-4" value="Media Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="240" width="200" height="40" as="geometry" />
